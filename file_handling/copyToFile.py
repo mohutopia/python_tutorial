@@ -1,0 +1,11 @@
+ufn = input('Enter your file name: ')
+ufn = './file_handling/' + ufn + '.txt'
+ufi = input('Enter text to be copied: ')
+f1 = open(ufn, 'w')
+f1.write(ufi)
+f1.close()
+f1 = open(ufn, 'r')
+f2 = open('./file_handling/copiedfile.txt', 'w')
+f2.write(f1.read())
+f1.close()
+f2.close()
